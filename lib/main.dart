@@ -4,6 +4,7 @@ import 'package:study/MyAnimatedContainer.dart';
 import 'package:study/MyDrawer.dart';
 import 'package:study/MyOrientation.dart';
 import 'package:study/MySnackBar.dart';
+import 'package:study/MyTabController.dart';
 
 void main() => runApp(MyApp());
 
@@ -66,6 +67,12 @@ class _HomeState extends State<Home> {
           title: Text('Orientation'),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (conetext) => MyOrientation()));
+          },
+        ),
+        ListTile(
+          title: Text('TabController'),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => MyTabController()));
           },
         ),
       ],
