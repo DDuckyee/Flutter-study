@@ -5,6 +5,7 @@ import 'package:study/MyDrawer.dart';
 import 'package:study/MyFormValidation.dart';
 import 'package:study/MyOrientation.dart';
 import 'package:study/MySnackBar.dart';
+import 'package:study/MySwipeToDismiss.dart';
 import 'package:study/MyTabController.dart';
 
 void main() => runApp(MyApp());
@@ -77,9 +78,15 @@ class _HomeState extends State<Home> {
           },
         ),
         ListTile(
-          title: Text('MyFormValidation'),
+          title: Text('FormValidation'),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => MyFormValidation()));
+          },
+        ),
+        ListTile(
+          title: Text('SwipeToDismiss'),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => MySwipeToDismiss()));
           },
         ),
       ],
