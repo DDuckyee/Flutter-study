@@ -4,6 +4,7 @@ import 'package:study/MyAnimatedContainer.dart';
 import 'package:study/MyDrawer.dart';
 import 'package:study/MyFormValidation.dart';
 import 'package:study/MyOrientation.dart';
+import 'package:study/MyPageView.dart';
 import 'package:study/MySnackBar.dart';
 import 'package:study/MySwipeToDismiss.dart';
 import 'package:study/MyTabController.dart';
@@ -87,6 +88,12 @@ class _HomeState extends State<Home> {
           title: Text('SwipeToDismiss'),
           onTap: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => MySwipeToDismiss()));
+          },
+        ),
+        ListTile(
+          title: Text('PageView'),
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => MyPageView()));
           },
         ),
       ],
